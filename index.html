@@ -1,184 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Exim Pathshala</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exim Pathshala | Import Export Training</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-<style>
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background: #000;
-  display: flex;
-  justify-content: center;
-}
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(255, 140, 0, 0.25);
+            border: 1px solid #ffe0b3;
+        }
 
-/* CARD */
-.card {
-  width: 100%;
-  max-width: 380px;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 25px rgba(255,140,0,0.4);
-}
+        /* Logo Strip */
+        .logo-strip {
+            background: #fff;
+            padding: 18px 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff8c00;
+        }
 
-/* LOGO STRIP */
-.logo-strip {
-  background: #fff;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 2px solid orange;
-}
+        .logo-strip img {
+            max-width: 190px;
+            height: auto;
+        }
 
-.logo-strip img {
-  width: 180px;
-  height: auto;
-}
+        /* Content */
+        .content {
+            padding: 25px 20px;
+            text-align: center;
+        }
 
-/* CONTENT */
-.content {
-  padding: 20px;
-  text-align: center;
-}
+        h1 {
+            color: #ff8c00;
+            margin: 8px 0 6px;
+            font-size: 26px;
+            font-weight: 700;
+        }
 
-h1 {
-  color: #ff8c00;
-  margin: 10px 0;
-}
+        .tagline {
+            font-size: 14.5px;
+            color: #444;
+            margin-bottom: 22px;
+            line-height: 1.4;
+        }
 
-/* TAGLINE */
-.tagline {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 15px;
-}
+        /* Buttons */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            background: linear-gradient(45deg, #ff8c00, #ffaa33);
+            color: #000;
+            padding: 15px 18px;
+            margin: 9px 0;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+        }
 
-/* BUTTON */
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-decoration: none;
-  background: linear-gradient(45deg, orange, #ff8c00);
-  color: black;
-  padding: 14px;
-  margin: 8px 0;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 15px;
-}
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(255, 140, 0, 0.4);
+        }
 
-.btn img {
-  width: 20px;
-}
+        .btn img {
+            width: 22px;
+            height: 22px;
+        }
 
-/* SOCIAL */
-.social {
-  margin: 18px 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+        /* Social Icons */
+        .social {
+            margin: 25px 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
 
-.social img {
-  width: 42px;
-  padding: 10px;
-  border-radius: 50%;
-  background: #f2f2f2;
-}
+        .social a {
+            display: block;
+        }
 
-/* CTA */
-.cta {
-  margin-top: 10px;
-  color: #ff8c00;
-  font-weight: bold;
-}
+        .social img {
+            width: 48px;
+            padding: 10px;
+            border-radius: 50%;
+            background: #f8f8f8;
+            transition: all 0.3s ease;
+        }
 
-/* FOOTER */
-.footer {
-  font-size: 13px;
-  color: #333;
-  margin-top: 15px;
-}
-</style>
+        .social img:hover {
+            background: #ffe0b3;
+            transform: scale(1.08);
+        }
+
+        /* CTA */
+        .cta {
+            margin: 18px 0 10px;
+            color: #ff8c00;
+            font-weight: 700;
+            font-size: 15.5px;
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 13.2px;
+            color: #555;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+
+        .footer strong {
+            color: #333;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="card">
+    <div class="card">
+        
+        <!-- LOGO STRIP -->
+        <div class="logo-strip">
+            <img src="Logo.png" alt="Exim Pathshala Logo">
+        </div>
 
-<!-- LOGO STRIP -->
-<div class="logo-strip">
-<img src="Logo.png">
-</div>
+        <div class="content">
+            
+            <h1>Exim Pathshala</h1>
+            
+            <div class="tagline">
+                Practical Import Export Training<br>
+                to Start Your Own Business
+            </div>
 
-<div class="content">
+            <!-- Action Buttons -->
+            <a href="tel:+919824918399" class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call">
+                Call Now
+            </a>
 
-<h1>Exim Pathshala</h1>
+            <a href="mailto:info@eximpathshala.com" class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+                Send Email
+            </a>
 
-<div class="tagline">
-Practical Import Export Training to Start Your Own Business
-</div>
+            <a href="https://www.eximpathshala.com" target="_blank" class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Website">
+                Visit Website
+            </a>
 
-<a href="tel:+919824918399" class="btn">
-<img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
-Call Now
-</a>
+            <a href="https://maps.app.goo.gl/7GxpyjgiQDpuBeD37" target="_blank" class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location">
+                Open Location
+            </a>
 
-<a href="mailto:info@eximpathshala.com" class="btn">
-<img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
-Email
-</a>
+            <a href="exim_pathshala_contact.vcf" download class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Save Contact">
+                Save Contact
+            </a>
 
-<a href="https://www.eximpathshala.com" class="btn">
-<img src="https://cdn-icons-png.flaticon.com/512/841/841364.png">
-Website
-</a>
+            <!-- Social Icons -->
+            <div class="social">
+                <a href="https://www.instagram.com/exim_pathshala" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61578815680258" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                </a>
+                <a href="https://wa.me/919824918399" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                </a>
+            </div>
 
-<!-- LOCATION BUTTON -->
-<a href="https://maps.app.goo.gl/7GxpyjgiQDpuBeD37" target="_blank" class="btn">
-<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
-Open Location
-</a>
+            <div class="cta">
+                🚀 Join Today & Start Your Export Journey
+            </div>
 
-<a href="exim_pathshala_contact.vcf" download class="btn">
-<img src="https://cdn-icons-png.flaticon.com/512/747/747376.png">
-Save Contact
-</a>
+            <div class="footer">
+                📍 <strong>921, City Centre 2</strong><br>
+                Science City Road, Ahmedabad<br>
+                Gujarat - 380060
+            </div>
 
-<!-- SOCIAL -->
-<div class="social">
-
-<a href="https://www.instagram.com/exim_pathshala" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-</a>
-
-<a href="https://www.facebook.com/profile.php?id=61578815680258" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-</a>
-
-<a href="https://wa.me/919824918399" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
-
-</div>
-
-<div class="cta">
-🚀 Join Today & Start Your Export Journey
-</div>
-
-<div class="footer">
-📍 921, City Centre 2,<br>
-Science City Road, Ahmedabad,<br>
-Gujarat - 380060
-</div>
-
-</div>
-
-</div>
+        </div>
+    </div>
 
 </body>
 </html>
