@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exim Pathshala - International Trade Training</title>
+    <title>Exim Pathshala - Global Trade Excellence</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
         body {
             margin: 0;
-            padding: 20px;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #0a2540, #1e3a5f);
+            padding: 25px 20px;
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a1f3d, #1e3a6b);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,58 +21,67 @@
         .card {
             width: 100%;
             max-width: 400px;
-            background: #ffffff;
-            border-radius: 24px;
+            background: #0f2a4f;
+            border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(10, 37, 64, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            position: relative;
         }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 30px 50px rgba(10, 37, 64, 0.5);
+        /* Subtle background lines pattern */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 1;
         }
 
-        /* Logo Strip */
         .logo-strip {
             background: #ffffff;
-            padding: 25px 30px 20px;
+            padding: 28px 30px 22px;
             text-align: center;
-            border-bottom: 6px solid #ff8c00;
+            position: relative;
+            z-index: 2;
         }
 
         .logo-strip img {
-            max-width: 220px;
+            max-width: 225px;
             height: auto;
         }
 
         .content {
-            padding: 32px 28px;
+            padding: 35px 30px 32px;
             text-align: center;
-            background: linear-gradient(to bottom, #0a2540, #132f52);
-            color: #fff;
+            position: relative;
+            z-index: 2;
         }
 
         h1 {
             color: #ffffff;
-            margin: 10px 0 8px;
-            font-size: 29px;
+            font-size: 30px;
             font-weight: 700;
+            margin: 0 0 6px;
+            letter-spacing: -0.5px;
         }
 
         .subtitle {
-            color: #ffaa44;
-            font-size: 16px;
+            color: #ffaa33;
+            font-size: 15.5px;
             font-weight: 600;
-            margin-bottom: 22px;
-            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            letter-spacing: 1.2px;
         }
 
         .tagline {
+            color: #c8d6e8;
             font-size: 15.2px;
             line-height: 1.55;
-            margin-bottom: 28px;
-            opacity: 0.95;
+            margin-bottom: 32px;
         }
 
         .btn {
@@ -78,60 +89,65 @@
             align-items: center;
             justify-content: center;
             gap: 14px;
+            background: rgba(255,255,255,0.95);
+            color: #0f2a4f;
+            padding: 17px 24px;
+            margin: 12px 0;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
             text-decoration: none;
-            background: #ffffff;
-            color: #0a2540;
-            padding: 17px 22px;
-            margin: 11px 0;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 16.2px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(255,170,50,0.3);
         }
 
         .btn:hover {
-            background: #ff8c00;
-            color: #000;
+            background: #ffaa33;
+            color: #0f2a4f;
             transform: translateY(-4px);
-            box-shadow: 0 12px 20px rgba(255, 140, 0, 0.4);
+            box-shadow: 0 12px 25px rgba(255, 170, 51, 0.35);
         }
 
         .btn img {
             width: 26px;
+            filter: brightness(0.95);
         }
 
         .social {
-            margin: 32px 0 22px;
+            margin: 35px 0 20px;
             display: flex;
             justify-content: center;
-            gap: 24px;
+            gap: 26px;
+            position: relative;
+            z-index: 2;
         }
 
         .social img {
-            width: 52px;
-            padding: 12px;
+            width: 54px;
+            padding: 13px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.15);
             transition: all 0.4s ease;
         }
 
         .social img:hover {
-            background: #ff8c00;
-            transform: scale(1.15);
+            background: #ffaa33;
+            border-color: #ffaa33;
+            transform: scale(1.12);
         }
 
         .cta {
-            color: #ffaa44;
-            font-size: 16.5px;
+            color: #ffaa33;
+            font-size: 16.8px;
             font-weight: 700;
-            margin: 18px 0 12px;
+            margin: 15px 0 18px;
         }
 
         .footer {
+            color: #a8c0e0;
             font-size: 13.8px;
             line-height: 1.6;
-            opacity: 0.92;
         }
     </style>
 </head>
@@ -151,7 +167,7 @@
             
             <div class="tagline">
                 Practical Training in Import • Export •<br>
-                Global Business & Logistics
+                Global Business & Supply Chain
             </div>
 
             <a href="tel:+919824918399" class="btn">
@@ -192,7 +208,7 @@
             </div>
 
             <div class="cta">
-                🚀 Start Your Global Export-Import Journey Today
+                🚀 Launch Your Global Trade Career Today
             </div>
 
             <div class="footer">
