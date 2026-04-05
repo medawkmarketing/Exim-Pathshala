@@ -6,91 +6,98 @@
 
 <style>
 body {
-  text-align: center;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
   background: #000;
-  color: #fff;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
-  padding: 20px;
+/* CARD BOX */
+.card {
+  width: 90%;
+  max-width: 380px;
+  background: #111;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  border: 2px solid orange;
+  box-shadow: 0 0 25px rgba(255,165,0,0.5);
 }
 
+/* LOGO */
 .logo {
-  width: 120px;
-  margin-top: 20px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 
+/* TITLE */
 h1 {
   color: orange;
   margin: 10px 0;
-  font-size: 26px;
 }
 
+/* BUTTON */
 button {
-  width: 85%;
+  width: 100%;
   padding: 14px;
-  margin: 10px;
+  margin: 10px 0;
   font-size: 16px;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   background: orange;
   color: black;
   font-weight: bold;
-  box-shadow: 0 0 10px orange;
+  cursor: pointer;
   transition: 0.2s;
+}
+
+button:hover {
+  background: #ff9900;
 }
 
 button:active {
   transform: scale(0.96);
 }
 
-.save-btn {
-  background: white;
-  color: black;
-}
-
+/* ADDRESS */
 .footer {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #ccc;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bbb;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<!-- LOGO -->
 <img src="Logo.png" class="logo">
 
 <h1>Exim Pathshala</h1>
 
-<!-- CALL -->
 <a href="tel:+919824918399">
 <button>📞 Call Now</button>
 </a>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/919824918399">
 <button>💬 WhatsApp</button>
 </a>
 
-<!-- EMAIL -->
 <a href="mailto:info@eximpathshala.com">
 <button>📧 Email</button>
 </a>
 
-<!-- WEBSITE -->
 <a href="https://www.eximpathshala.com">
 <button>🌐 Visit Website</button>
 </a>
 
-<!-- SAVE CONTACT -->
 <a href="exim_pathshala_contact.vcf" download>
-<button class="save-btn">💾 Save Contact</button>
+<button>💾 Save Contact</button>
 </a>
 
 <div class="footer">
