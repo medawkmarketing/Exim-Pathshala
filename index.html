@@ -23,46 +23,48 @@
             border-radius: 22px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(10, 37, 64, 0.3);
-            border: 1px solid #ff8c00;
         }
 
+        /* Logo Strip - સફેદ બેકગ્રાઉન્ડ માટે */
         .logo-strip {
-            background: #0a2540;
-            padding: 20px 25px;
+            background: #ffffff;
+            padding: 22px 25px;
             text-align: center;
-            border-bottom: 4px solid #ff8c00;
+            border-bottom: 5px solid #ff8c00;
         }
 
         .logo-strip img {
-            max-width: 200px;
+            max-width: 210px;
             height: auto;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* થોડી શેડો માટે */
         }
 
         .content {
             padding: 30px 25px;
             text-align: center;
+            background: #0a2540;
+            color: #fff;
         }
 
         h1 {
-            color: #0a2540;
+            color: #ffffff;
             margin: 10px 0 8px;
             font-size: 28px;
             font-weight: 700;
-            letter-spacing: 0.5px;
         }
 
         .subtitle {
             color: #ff8c00;
-            font-size: 15px;
+            font-size: 15.5px;
             font-weight: 600;
             margin-bottom: 20px;
         }
 
         .tagline {
             font-size: 15px;
-            color: #333;
             line-height: 1.5;
             margin-bottom: 25px;
+            opacity: 0.95;
         }
 
         .btn {
@@ -71,8 +73,8 @@
             justify-content: center;
             gap: 12px;
             text-decoration: none;
-            background: #0a2540;
-            color: #fff;
+            background: #ffffff;
+            color: #0a2540;
             padding: 16px 20px;
             margin: 10px 0;
             border-radius: 12px;
@@ -89,7 +91,6 @@
 
         .btn img {
             width: 24px;
-            filter: brightness(0) invert(1);
         }
 
         .social {
@@ -103,13 +104,13 @@
             width: 50px;
             padding: 12px;
             border-radius: 50%;
-            background: #f5f5f5;
+            background: rgba(255,255,255,0.15);
             transition: 0.3s;
         }
 
         .social img:hover {
             background: #ff8c00;
-            transform: scale(1.1);
+            transform: scale(1.08);
         }
 
         .cta {
@@ -121,8 +122,8 @@
 
         .footer {
             font-size: 13.5px;
-            color: #555;
             line-height: 1.6;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -130,9 +131,9 @@
 
     <div class="card">
         
-        <!-- Logo Strip -->
+        <!-- Logo Strip - હવે સફેદ -->
         <div class="logo-strip">
-            <img src="Logo.png" alt="Exim Pathshala">
+            <img src="Logo.png" alt="Exim Pathshala Logo">
         </div>
 
         <div class="content">
@@ -170,16 +171,15 @@
                 Save Contact
             </a>
 
-            <!-- Social -->
             <div class="social">
                 <a href="https://www.instagram.com/exim_pathshala" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61578815680258" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
                 </a>
                 <a href="https://wa.me/919824918399" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
                 </a>
             </div>
 
