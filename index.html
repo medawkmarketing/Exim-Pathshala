@@ -25,6 +25,7 @@ body {
 h1 {
   color: orange;
   margin: 10px 0;
+  font-size: 26px;
 }
 
 button {
@@ -38,10 +39,11 @@ button {
   color: black;
   font-weight: bold;
   box-shadow: 0 0 10px orange;
+  transition: 0.2s;
 }
 
 button:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
 
 .save-btn {
@@ -57,4 +59,47 @@ button:active {
 </style>
 </head>
 
-<body
+<body>
+
+<div class="container">
+
+<!-- LOGO -->
+<img src="Logo.png" class="logo">
+
+<h1>Exim Pathshala</h1>
+
+<!-- CALL -->
+<a href="tel:+919824918399">
+<button>📞 Call Now</button>
+</a>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919824918399">
+<button>💬 WhatsApp</button>
+</a>
+
+<!-- EMAIL -->
+<a href="mailto:info@eximpathshala.com">
+<button>📧 Email</button>
+</a>
+
+<!-- WEBSITE -->
+<a href="https://www.eximpathshala.com">
+<button>🌐 Visit Website</button>
+</a>
+
+<!-- SAVE CONTACT -->
+<a href="exim_pathshala_contact.vcf" download>
+<button class="save-btn">💾 Save Contact</button>
+</a>
+
+<div class="footer">
+📍 921, City Centre 2,<br>
+Science City Road, Ahmedabad,<br>
+Gujarat - 380060
+</div>
+
+</div>
+
+</body>
+</html>
