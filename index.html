@@ -3,67 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exim Pathshala - International Trade Training</title>
+    <title>Exim Pathshala - International Trade</title>
     <style>
         body {
             margin: 0;
-            padding: 20px;
+            padding: 30px 20px;
             font-family: 'Segoe UI', Arial, sans-serif;
             background: linear-gradient(135deg, #0a2540, #1e3a5f);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            perspective: 1200px; /* 3D depth માટે */
         }
 
         .card {
             width: 100%;
-            max-width: 390px;
+            max-width: 400px;
             background: #ffffff;
-            border-radius: 22px;
+            border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(10, 37, 64, 0.3);
+            box-shadow: 
+                0 25px 50px -12px rgba(10, 37, 64, 0.5),
+                0 15px 25px -8px rgba(255, 140, 0, 0.3),
+                inset 0 -8px 12px rgba(0,0,0,0.08); /* 3D lift effect */
+            transform: rotateX(8deg) rotateY(-6deg); /* હળવો 3D ટિલ્ટ */
+            transition: transform 0.4s ease;
         }
 
-        /* Logo Strip - સફેદ બેકગ્રાઉન્ડ માટે */
+        .card:hover {
+            transform: rotateX(4deg) rotateY(-3deg) translateY(-8px);
+        }
+
+        /* Logo Strip */
         .logo-strip {
             background: #ffffff;
-            padding: 22px 25px;
+            padding: 24px 30px;
             text-align: center;
-            border-bottom: 5px solid #ff8c00;
+            border-bottom: 6px solid #ff8c00;
         }
 
         .logo-strip img {
-            max-width: 210px;
+            max-width: 215px;
             height: auto;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* થોડી શેડો માટે */
+            filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
         }
 
         .content {
-            padding: 30px 25px;
+            padding: 32px 28px;
             text-align: center;
-            background: #0a2540;
+            background: linear-gradient(to bottom, #0a2540, #132f52);
             color: #fff;
         }
 
         h1 {
             color: #ffffff;
-            margin: 10px 0 8px;
-            font-size: 28px;
+            margin: 12px 0 6px;
+            font-size: 29px;
             font-weight: 700;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.3);
         }
 
         .subtitle {
-            color: #ff8c00;
-            font-size: 15.5px;
+            color: #ffaa44;
+            font-size: 16px;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+            letter-spacing: 1px;
         }
 
         .tagline {
-            font-size: 15px;
+            font-size: 15.2px;
             line-height: 1.5;
-            margin-bottom: 25px;
+            margin-bottom: 28px;
             opacity: 0.95;
         }
 
@@ -71,59 +83,64 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 14px;
             text-decoration: none;
             background: #ffffff;
             color: #0a2540;
-            padding: 16px 20px;
-            margin: 10px 0;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s;
+            padding: 17px 22px;
+            margin: 11px 0;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 16.2px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.25),
+                        inset 0 -4px 8px rgba(255,255,255,0.6);
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
             background: #ff8c00;
             color: #000;
-            transform: translateY(-3px);
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 12px 20px rgba(255, 140, 0, 0.4);
         }
 
         .btn img {
-            width: 24px;
+            width: 26px;
         }
 
         .social {
-            margin: 30px 0 20px;
+            margin: 32px 0 22px;
             display: flex;
             justify-content: center;
-            gap: 22px;
+            gap: 24px;
         }
 
         .social img {
-            width: 50px;
+            width: 52px;
             padding: 12px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.15);
-            transition: 0.3s;
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            transition: 0.4s;
         }
 
         .social img:hover {
             background: #ff8c00;
-            transform: scale(1.08);
+            transform: scale(1.12) rotate(8deg);
         }
 
         .cta {
-            color: #ff8c00;
-            font-size: 16px;
+            color: #ffaa44;
+            font-size: 16.5px;
             font-weight: 700;
-            margin: 15px 0;
+            margin: 18px 0 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
 
         .footer {
-            font-size: 13.5px;
+            font-size: 13.8px;
             line-height: 1.6;
-            opacity: 0.9;
+            opacity: 0.92;
         }
     </style>
 </head>
@@ -131,7 +148,7 @@
 
     <div class="card">
         
-        <!-- Logo Strip - હવે સફેદ -->
+        <!-- Logo Strip -->
         <div class="logo-strip">
             <img src="Logo.png" alt="Exim Pathshala Logo">
         </div>
