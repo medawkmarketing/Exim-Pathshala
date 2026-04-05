@@ -9,51 +9,49 @@ body {
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #000000, #1a1a1a);
+  background: #000;
   display: flex;
   justify-content: center;
 }
 
-/* GLASS CARD */
+/* CARD */
 .card {
   width: 100%;
   max-width: 380px;
-  padding: 25px;
-  border-radius: 20px;
-  text-align: center;
-  backdrop-filter: blur(15px);
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 40px rgba(255,140,0,0.4);
-  animation: fadeIn 1s ease;
-}
-
-/* ANIMATION */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(40px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-
-/* LOGO FIX */
-.logo {
-  width: 90px;
-  padding: 12px;
+  border-radius: 18px;
+  overflow: hidden;
   background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  margin-bottom: 10px;
+  box-shadow: 0 0 25px rgba(255,140,0,0.4);
 }
 
-/* TITLE */
+/* LOGO STRIP */
+.logo-strip {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid orange;
+}
+
+.logo-strip img {
+  width: 180px;
+  height: auto;
+}
+
+/* CONTENT */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
-  color: orange;
-  margin: 5px 0;
+  color: #ff8c00;
+  margin: 10px 0;
 }
 
 /* TAGLINE */
 .tagline {
   font-size: 13px;
-  color: #ccc;
+  color: #555;
   margin-bottom: 15px;
 }
 
@@ -68,24 +66,18 @@ h1 {
   color: black;
   padding: 14px;
   margin: 8px 0;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 15px;
-  transition: 0.3s;
 }
 
 .btn img {
   width: 20px;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px orange;
-}
-
 /* SOCIAL */
 .social {
-  margin: 20px 0;
+  margin: 18px 0;
   display: flex;
   justify-content: center;
   gap: 18px;
@@ -95,26 +87,20 @@ h1 {
   width: 40px;
   padding: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
-  transition: 0.3s;
-}
-
-.social img:hover {
-  transform: scale(1.2);
-  background: rgba(255,165,0,0.3);
+  background: #f2f2f2;
 }
 
 /* CTA */
 .cta {
   margin-top: 10px;
-  color: orange;
+  color: #ff8c00;
   font-weight: bold;
 }
 
 /* FOOTER */
 .footer {
   font-size: 13px;
-  color: #ddd;
+  color: #333;
   margin-top: 15px;
 }
 </style>
@@ -124,7 +110,12 @@ h1 {
 
 <div class="card">
 
-<img src="Logo.png" class="logo">
+<!-- LOGO STRIP -->
+<div class="logo-strip">
+<img src="Logo.png">
+</div>
+
+<div class="content">
 
 <h1>Exim Pathshala</h1>
 
@@ -182,6 +173,8 @@ Save Contact
 📍 921, City Centre 2,<br>
 Science City Road, Ahmedabad,<br>
 Gujarat - 380060
+</div>
+
 </div>
 
 </div>
