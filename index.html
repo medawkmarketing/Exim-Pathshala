@@ -8,26 +8,29 @@
 body {
   margin: 0;
   padding: 20px;
-  background: linear-gradient(135deg, #000, #111);
   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
   display: flex;
   justify-content: center;
 }
 
-/* CARD */
+/* GLASS CARD */
 .card {
   width: 100%;
   max-width: 380px;
-  background: #fff;
-  border-radius: 20px;
   padding: 25px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 0 30px rgba(255,140,0,0.6);
-  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 40px rgba(255,140,0,0.4);
+  animation: fadeIn 1s ease;
 }
 
+/* ANIMATION */
 @keyframes fadeIn {
-  from {opacity: 0; transform: translateY(30px);}
+  from {opacity: 0; transform: translateY(40px);}
   to {opacity: 1; transform: translateY(0);}
 }
 
@@ -39,20 +42,23 @@ body {
 
 /* TITLE */
 h1 {
-  color: #ff8c00;
+  color: orange;
   margin: 5px 0;
 }
 
 /* TAGLINE */
 .tagline {
   font-size: 13px;
-  color: #555;
+  color: #ccc;
   margin-bottom: 15px;
 }
 
 /* BUTTON */
 .btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-decoration: none;
   background: linear-gradient(45deg, orange, #ff8c00);
   color: black;
@@ -61,56 +67,50 @@ h1 {
   border-radius: 12px;
   font-weight: bold;
   font-size: 15px;
-  box-shadow: 0 5px 15px rgba(255,140,0,0.4);
   transition: 0.3s;
+}
+
+.btn img {
+  width: 20px;
 }
 
 .btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px orange;
 }
 
-/* ICON BUTTON (MODERN) */
-.icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* SOCIAL ROW */
+/* SOCIAL */
 .social {
   margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 18px; /* spacing */
+  gap: 18px;
 }
 
-/* ICON STYLE */
 .social img {
-  width: 42px;
+  width: 40px;
   padding: 10px;
   border-radius: 50%;
-  background: #f5f5f5;
+  background: rgba(255,255,255,0.1);
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .social img:hover {
   transform: scale(1.2);
-  background: #ffe0b3;
+  background: rgba(255,165,0,0.3);
 }
 
 /* CTA */
 .cta {
   margin-top: 10px;
-  color: #ff8c00;
+  color: orange;
   font-weight: bold;
 }
 
 /* FOOTER */
 .footer {
   font-size: 13px;
-  color: #333;
+  color: #ddd;
   margin-top: 15px;
 }
 </style>
@@ -128,27 +128,32 @@ h1 {
 Practical Import Export Training to Start Your Own Business
 </div>
 
-<a href="tel:+919824918399" class="btn icon-btn">
-📞 Call Now
+<a href="tel:+919824918399" class="btn">
+<img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
+Call Now
 </a>
 
-<a href="https://wa.me/919824918399" class="btn icon-btn">
-💬 WhatsApp Now
+<a href="https://wa.me/919824918399" class="btn">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+WhatsApp
 </a>
 
-<a href="mailto:info@eximpathshala.com" class="btn icon-btn">
-📧 Send Email
+<a href="mailto:info@eximpathshala.com" class="btn">
+<img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
+Email
 </a>
 
-<a href="https://www.eximpathshala.com" class="btn icon-btn">
-🌐 Visit Website
+<a href="https://www.eximpathshala.com" class="btn">
+<img src="https://cdn-icons-png.flaticon.com/512/841/841364.png">
+Website
 </a>
 
-<a href="exim_pathshala_contact.vcf" download class="btn icon-btn">
-💾 Save Contact
+<a href="exim_pathshala_contact.vcf" download class="btn">
+<img src="https://cdn-icons-png.flaticon.com/512/747/747376.png">
+Save Contact
 </a>
 
-<!-- SOCIAL MEDIA ICONS -->
+<!-- SOCIAL -->
 <div class="social">
 
 <a href="https://www.instagram.com/exim_pathshala" target="_blank">
