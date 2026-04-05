@@ -26,7 +26,6 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* ANIMATION */
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(30px);}
   to {opacity: 1; transform: translateY(0);}
@@ -68,27 +67,42 @@ h1 {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(255,140,0,0.7);
 }
 
-/* SOCIAL */
+/* ICON BUTTON (MODERN) */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* SOCIAL ROW */
 .social {
-  margin: 15px 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px; /* spacing */
 }
 
+/* ICON STYLE */
 .social img {
-  width: 38px;
-  margin: 6px;
+  width: 42px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #f5f5f5;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .social img:hover {
   transform: scale(1.2);
+  background: #ffe0b3;
 }
 
 /* CTA */
 .cta {
-  margin-top: 15px;
+  margin-top: 10px;
   color: #ff8c00;
   font-weight: bold;
 }
@@ -114,17 +128,27 @@ h1 {
 Practical Import Export Training to Start Your Own Business
 </div>
 
-<a href="tel:+919824918399" class="btn">📞 Call Now</a>
+<a href="tel:+919824918399" class="btn icon-btn">
+📞 Call Now
+</a>
 
-<a href="https://wa.me/919824918399" class="btn">💬 WhatsApp Now</a>
+<a href="https://wa.me/919824918399" class="btn icon-btn">
+💬 WhatsApp Now
+</a>
 
-<a href="mailto:info@eximpathshala.com" class="btn">📧 Send Email</a>
+<a href="mailto:info@eximpathshala.com" class="btn icon-btn">
+📧 Send Email
+</a>
 
-<a href="https://www.eximpathshala.com" class="btn">🌐 Visit Website</a>
+<a href="https://www.eximpathshala.com" class="btn icon-btn">
+🌐 Visit Website
+</a>
 
-<a href="exim_pathshala_contact.vcf" download class="btn">💾 Save Contact</a>
+<a href="exim_pathshala_contact.vcf" download class="btn icon-btn">
+💾 Save Contact
+</a>
 
-<!-- SOCIAL MEDIA -->
+<!-- SOCIAL MEDIA ICONS -->
 <div class="social">
 
 <a href="https://www.instagram.com/exim_pathshala" target="_blank">
@@ -133,6 +157,10 @@ Practical Import Export Training to Start Your Own Business
 
 <a href="https://www.facebook.com/profile.php?id=61578815680258" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+</a>
+
+<a href="https://wa.me/919824918399" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 
 </div>
